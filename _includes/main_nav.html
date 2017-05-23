@@ -1,0 +1,9 @@
+<nav class="menu">
+	<ul>
+		{% for item in include.lista_menu %}
+			<li>
+				<a href="{{ site.url }}/{{ item }}">{{ item }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+</nav>
