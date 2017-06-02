@@ -86,7 +86,10 @@ gulp.task('server', ['jekyll-build'], () => {
     server: {
       baseDir: '_site'
     },
-    host: 'localhost'
+    host: 'localhost',
+    open: false,
+    reloadOnRestart: true,
+    logPrefix: 'Learning Jekyll'
   })
 })
 
