@@ -1,0 +1,17 @@
+@function colors ($color, $type:base) {
+  $colors: (
+    color: (
+      base: white,
+      dark: black,
+      first: #CB470C,
+      second: #D9561F,
+      third: #C03A01,
+      fourth: #4A4A4A,
+      fifth: #ccc,
+      sixth: #333
+    )
+  );
+
+  $returnColor: map-get($colors, $color);
+  @return map-get($returnColor, $type);
+}
